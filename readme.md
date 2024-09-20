@@ -1,5 +1,4 @@
 # Fire-Farmacy
-Fire Farmacy
 
 # Área Pública (Não Logada)
 Página Inicial:
