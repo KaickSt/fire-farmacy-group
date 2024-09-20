@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Farmacy - Produtos</title>
+    <link rel="stylesheet" href="/Css's/styles.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/Imagens/pngwing.com.png" alt="Logo" class="logo"> 
+            <h1>Fire Farmacy</h1>
+        </div>
+        <br>
+        <nav>
+            <a href="/html's/Index.html">Início</a>
+            <a href="/html's/Produto.html">Produtos</a>
+            <a href="/html's/Contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <aside class="filtros">
+            <h2>Filtros</h2>
+            <label for="categoria">Categoria:</label>
+            <select id="categoria">
+                <option value="todos">Todos</option>
+                <option value="medicamentos">Medicamentos</option>
+                <option value="cosmeticos">Cosméticos</option>
+            </select>
+            <label for="preco">Preço:</label>
+            <input type="text" id="preco" placeholder="Faixa de preço">
+        </aside>
+        <section class="lista-produtos">
+            <h2>Lista de Produtos</h2>
+            <div class="produto">
+                <img src="/Imagens/Dipirona.webp" alt="Produto 1">
+                <p>Produto 1 - R$29,90</p>
+                <button>Adicionar ao Carrinho</button>
+            </div>
+           
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fire Farmacy</p>
+    </footer>
+</body>
+</html>

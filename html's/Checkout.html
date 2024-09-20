@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+</head>
+<body>
+    <h1>Finalizar Compra</h1>
+    <form action="CheckoutServlet" method="POST">
+        <h2>Informações do Cliente</h2>
+        Nome: <input type="text" name="nome" required><br>
+        Endereço: <input type="text" name="endereco" required><br>
+        CPF: <input type="text" name="cpf" required><br>
+        
+        <h2>Informações de Pagamento</h2>
+        Cartão de Crédito: <input type="text" name="cartao" required><br>
+        Data de Validade: <input type="text" name="validade" required><br>
+        CVV: <input type="text" name="cvv" required><br>
+
+        <button type="submit">Finalizar Compra</button>
+    </form>
+</body>
+</html>
