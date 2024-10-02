@@ -1,4 +1,4 @@
-/* Estilos Globais */
+
 * {
     margin: 0;
     padding: 0;
@@ -63,16 +63,16 @@ nav a:hover {
     transform: scale(1.1);
 }
 
-/* Main */
+
 main {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 120px); /* Altura ajustada para ocupar o espaço restante abaixo do header */
+    height: calc(100vh - 120px); 
     background-color: #f5f5f5;
 }
 
-/* Container Principal */
+
 .login-container {
     width: 80%;
     max-width: 900px;
@@ -84,7 +84,7 @@ main {
     padding: 40px;
 }
 
-/* Formulário de Login */
+
 .login-form, .register-form {
     width: 45%;
 }
@@ -107,7 +107,7 @@ p {
     color: #666666;
 }
 
-/* Campos do Formulário */
+
 form {
     display: flex;
     flex-direction: column;
@@ -132,7 +132,6 @@ input[type="text"]:focus, input[type="password"]:focus {
     outline: none;
 }
 
-/* Botões */
 button {
     background-color: #989ffd;
     color: white;
@@ -148,7 +147,6 @@ button:hover {
     background-color: #03613d;
 }
 
-/* Link Esqueceu a Senha */
 .forgot-password {
     text-align: right;
     font-size: 0.9em;
@@ -160,7 +158,6 @@ button:hover {
     text-decoration: underline;
 }
 
-/* Seção de Cadastro */
 .register-form {
     background-color: #f5f5f5;
     padding: 20px;
@@ -185,7 +182,6 @@ button:hover {
     background-color: #03613d;
 }
 
-/* Layout Responsivo */
 @media (max-width: 768px) {
     .login-container {
         flex-direction: column;

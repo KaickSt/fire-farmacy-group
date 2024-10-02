@@ -1,4 +1,4 @@
-// registro.js
+
 document.getElementById('form-registro').addEventListener('submit', function(event) {
     event.preventDefault();
 
@@ -12,5 +12,5 @@ document.getElementById('form-registro').addEventListener('submit', function(eve
     localStorage.setItem('usuarios', JSON.stringify(usuarios));
 
     alert('Usuário registrado com sucesso!');
-    window.location.href = 'login.html'; // Redireciona para a página de login
+    window.location.href = 'login.html'; 
 });
