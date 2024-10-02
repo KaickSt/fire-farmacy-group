@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Login - Fire Farmacy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Css's/login.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/Imagens/pngwing.com.png" alt="Logo" class="logo">
+            <h1>Fire Farmacy</h1> 
+        </div>
+        <nav class="navbar">
+            <a href="/html's/Index.html"><i class="fas fa-home"></i> Início</a>
+            <a href="/html's/Produtos.html"><i class="fas fa-box-open"></i> Produtos</a>
+            <a href="/html's/Contato.html"><i class="fas fa-envelope"></i> Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="login-container">
+            <div class="login-form">
+                <h2>Identificação</h2>
+                <h3>Já sou cliente</h3>
+                <p>Faça login para acelerar sua compra</p>
+                <form action="#" method="POST">
+                    <label for="email"><i class="fas fa-user"></i> E-mail ou CPF</label>
+                    <input type="text" id="email" name="email" required>
+                    
+                    <label for="password"><i class="fas fa-lock"></i> Senha</label>
+                    <input type="password" id="password" name="password" required>
+
+                    <a href="#" class="forgot-password">Esqueceu sua senha?</a>
+                    
+                    <button type="submit" class="btn-login"><i class="fas fa-sign-in-alt"></i> Faça seu login</button>
+                </form>
+            </div>
+            <div class="register-form">
+                <h3>Ainda não sou cliente</h3>
+                <p>Cadastre-se para receber novidades e finalizar sua compra.</p>
+                <a href="/html's/registro.html" class="btn-register"><i class="fas fa-user-plus"></i> Cadastre-se</a>
+
+            </div>
+        </div>
+    </main>
+</body>
+</html>
