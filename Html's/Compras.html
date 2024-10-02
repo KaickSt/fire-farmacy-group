@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fire Farmacy - Carrinho de Compras</title>
+    <link rel="stylesheet" href="/Css's/compras.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
+        </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <img src="/Imagens/pngwing.com.png" alt="Logo" class="logo"> 
+            <h1>Fire Farmacy</h1>
+        </div>
+        <div class="login-button">
+            <a href="/html's/loginverdadeiro.html" class="btn-login">Login</a>
+        </div>
+        <br>
+        <nav>
+            <a href="/html's/Index.html">Início</a>
+            <a href="/html's/Produtos.html">Produtos</a>
+            <a href="/html's/Contato.html">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section class="carrinho">
+            <h2>Carrinho de Compras</h2>
+            <div class="item-carrinho" data-preco="29.90">
+                <img src="/Imagens/Dipirona.webp" alt="Produto 1">
+                <div class="detalhes-item">
+                    <p>Dipirona Sódica 500mg/ml Genérico Medley Gotas 20ml - <span class="preco">R$29,90</span></p>
+                    <input type="number" value="1" min="1" class="quantidade">
+                    <button class="btn-remover">Remover</button>
+                </div>
+            </div>
+          
+            <div class="total">
+                <p>Total: <span class="preco" id="total">R$29,90</span></p>
+                <button class="btn-checkout">Ir ao Checkout</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Fire Farmacy</p>
+    </footer>
+
+    <script src="/Js/compras.js"></script> 
+</body>
+</html>
