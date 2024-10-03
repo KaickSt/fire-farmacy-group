@@ -4,10 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fire Farmacy - Contato</title>
-    <link rel="stylesheet" href="/Css's/styles.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
-        </style>
+    <link rel="stylesheet" href="/Css's/Contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <header>
@@ -21,7 +19,7 @@
         <br>
         <nav>
             <a href="/html's/Index.html">Início</a>
-            <a href="/html's/Produto.html">Produtos</a>
+            <a href="/html's/Produtos.html">Produtos</a>
             <a href="/html's/Contato.html">Contato</a>
         </nav>
     </header>
@@ -29,20 +27,23 @@
         <section class="contato">
             <h2>Contato</h2>
             <form>
-                <label for="nome">Nome:</label>
+                <label for="nome"><i class="fas fa-user"></i> Nome:</label>
                 <input type="text" id="nome" required>
-                <label for="email">E-mail:</label>
+                <label for="email"><i class="fas fa-envelope"></i> E-mail:</label>
                 <input type="email" id="email" required>
-                <label for="assunto">Assunto:</label>
+                <label for="assunto"><i class="fas fa-comment"></i> Assunto:</label>
                 <input type="text" id="assunto" required>
-                <label for="mensagem">Mensagem:</label>
+                <label for="mensagem"><i class="fas fa-pencil-alt"></i> Mensagem:</label>
                 <textarea id="mensagem" required></textarea>
                 <button type="submit">Enviar</button>
             </form>
             <div class="info-contato">
-                <p>Endereço: Rua Exemplo, 123</p>
-                <p>Telefone: (11) 1234-5678</p>
-                <p>E-mail: contato@firefarmacy.com</p>
+                <h3><i class="fas fa-map-marker-alt"></i> Endereço:</h3>
+                <p>Av. Eng. Eusébio Stevaux, 823 - Santo Amaro, São Paulo - SP, 04696-000</p>
+                <h3><i class="fas fa-phone"></i> Telefone:</h3>
+                <p>(11) 5682-7399</p>
+                <h3><i class="fas fa-envelope"></i> E-mail:</h3>
+                <p>contato@firefarmacy.com</p>
             </div>
         </section>
     </main>
