@@ -8,7 +8,7 @@ body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    overflow-x: hidden; /* Adiciona overflow-x: hidden */
+    overflow-x: hidden; 
 }
 
 header h1 {
