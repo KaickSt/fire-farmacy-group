@@ -16,28 +16,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const quantidadeInput = item.querySelector('.quantidade');
         const removerButton = item.querySelector('.btn-remover');
 
-      
         quantidadeInput.addEventListener('change', updateTotal);
 
-    
         removerButton.addEventListener('click', () => {
             item.remove();
             updateTotal();
         });
     }
 
-    
     itemCarrinhoElements.forEach(setupItemCarrinho);
 
-    
     updateTotal();
 
-   
     document.querySelector('.btn-checkout').addEventListener('click', () => {
-        window.location.href = '/html/checkout.html';
+        window.location.href = "/html_s/checkout.html";
     });
 
-  
     const buttons = document.querySelectorAll('.btn-adicionar');
     buttons.forEach(button => {
         button.addEventListener('click', (e) => {
@@ -46,9 +40,11 @@ document.addEventListener('DOMContentLoaded', () => {
             const nome = produtoDiv.getAttribute('data-nome');
             const preco = produtoDiv.getAttribute('data-preco');
 
-          
-            if (!document.querySelector(`.item-carrinho[data-id="${produtoId}"]`)) {
-                const itemCarrinho = document.createElement('div');
+            let itemCarrinho = document.querySelector(`.item-carrinho[data-id="${produtoId}"]`);
+            
+            if (!itemCarrinho) {
+            
+                itemCarrinho = document.createElement('div');
                 itemCarrinho.classList.add('item-carrinho');
                 itemCarrinho.setAttribute('data-id', produtoId);
                 itemCarrinho.setAttribute('data-preco', preco);
@@ -63,9 +59,9 @@ document.addEventListener('DOMContentLoaded', () => {
                 document.querySelector('.total').insertAdjacentElement('beforebegin', itemCarrinho);
                 setupItemCarrinho(itemCarrinho);
             } else {
-                const quantidadeInput = document.querySelector(`.item-carrinho[data-id="${produtoId}"] .quantidade`);
+                
+                const quantidadeInput = itemCarrinho.querySelector('.quantidade');
                 quantidadeInput.value = parseInt(quantidadeInput.value) + 1;
-                updateTotal();
             }
 
             updateTotal();
